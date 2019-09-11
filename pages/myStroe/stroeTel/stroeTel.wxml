@@ -1,0 +1,17 @@
+<view>
+  <input class="input" value="123" type="text"></input>
+  <input class="input" value="123" type="text"></input>
+  <input class="input" value="123" type="text"></input>
+  <view class="bottom">
+    <view class="item">
+      <view>联系人</view>
+      <input placeholder="请输入联系人" placeholder-style="color:#BBBBBB;" type="text"></input>
+    </view>
+    <view class="item" style="margin-top:60rpx;">
+      <view>联系人</view>
+      <input placeholder="请输入联系人" placeholder-style="color:#BBBBBB;" type="text"></input>
+    </view>
+  </view>
+
+  <button>保存</button>
+</view>

@@ -1,12 +1,24 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/storeData/bill/bill",
+    "pages/storeData/billList/billList",
+    "pages/storeData/billListStcs/billListStcs",
+    "pages/myStroe/stroeIndex/stroeIndex",
+    "pages/myStroe/updateLogo/updateLogo",
+    "pages/myStroe/stroeName/stroeName",
+    "pages/myStroe/stroeQrcode/stroeQrcode",
+    "pages/myStroe/serviceState/serviceState",
+    "pages/myStroe/stroeLabel/stroeLabel",
+    "pages/myStroe/stroeTel/stroeTel",
+    "pages/myStroe/stroeInfo/stroeInfo"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "商家中心",
     "navigationBarTextStyle": "black"
   }
 }

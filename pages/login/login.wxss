@@ -1,0 +1,59 @@
+.title{
+    width:322rpx;
+    height:40rpx;
+    font-size:40rpx;
+    font-family:PingFangSC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:40rpx;
+    margin: 42rpx 0 0 40rpx;
+}
+.only{
+    width:112rpx;
+    height:28rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    line-height:28rpx;
+    margin:20rpx 0 0 40rpx;
+    color: #999999; 
+}
+input{
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(204,204,204,1);
+    line-height:60rpx;
+    margin: 0 40rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #DDDDDD;
+    color: #000000;
+}
+image{
+    position: absolute;
+    top: 0;
+    right: 40rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.password{
+    margin-top: 64rpx;
+}
+.input-box{
+    margin-top: 100rpx;
+}
+.input-box view{
+    position: relative;
+}
+button{
+    margin: 80rpx 40rpx;
+    height:88rpx;
+    background:linear-gradient(90deg,rgba(255,128,128,1) 0%,rgba(255,36,66,1) 100%);
+    border-radius:44rpx;
+    opacity:0.5;
+    color: #FFFFFF;
+}
+.btn2{
+    background:linear-gradient(90deg,rgba(255,128,128,1) 0%,rgba(255,36,66,1) 100%);s
+}

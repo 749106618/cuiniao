@@ -1,0 +1,10 @@
+<view>
+  <view class="main">
+    <textarea class="textarea" placeholder="请输入店铺信息内容，支持文字、图片等内容… 1500字内" placeholder-style="color:rgba(187,187,187,1);font-size:28rpx;" maxlength="1500"></textarea>
+    <view class="bottom">
+      <image class="left"></image>
+      <image class="right" src="/icon/pic.png"></image>
+    </view>
+  </view>
+  <button>保存</button>
+</view>

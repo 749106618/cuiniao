@@ -1,0 +1,9 @@
+<view>
+  <input class="input" value="123" type="text"></input>
+  <input class="input" value="123" type="text"></input>
+  <input class="input" value="123" type="text"></input>
+  <textarea class="textarea" placeholder="请输入类似经营时间、是否需要预约等信息" placeholder-style="color:rgba(187,187,187,1);font-size:28rpx;">
+    
+  </textarea>
+  <button>保存</button>
+</view>

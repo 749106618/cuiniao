@@ -1,0 +1,64 @@
+<view class="card">
+    <view class="monthly">月度统计</view>
+    <view class="month-income">
+        <text class="">本月收入(¥)</text>
+    </view>
+    <view class="money">
+        <text>123.00</text>
+    </view>
+    <view class="massage">
+        <view class="massage-a">
+            <view class="massage-d">26</view>
+            <view class="massage-c">订单数</view>
+        </view>
+        <view class="massage-a">
+            <view class="massage-d">100</view>
+            <view class="massage-c">客单价(¥)</view>
+        </view>
+        <view class="massage-a">
+            <view class="massage-d">70</view>
+            <view class="massage-c">会员数量</view>
+        </view>
+    </view>
+    <view class="total">
+        <text>本月</text>
+        <view>4月</view>
+        <view>4月</view>
+        <view>4月</view>
+        <view>4月</view>
+        <view>4月</view>
+        <view>4月</view>
+        <view>4月</view>
+    </view>
+</view>
+<view class="card">
+    <view class="monthly">年度统计</view>
+    <view class="month-income">
+        <text class="">本年收入(¥)</text>
+    </view>
+    <view class="money">
+        <text>99999999.00</text>
+    </view>
+    <view class="massage">
+        <view class="massage-a">
+            <view class="massage-d">26</view>
+            <view class="massage-c">订单数</view>
+        </view>
+        <view class="massage-a">
+            <view class="massage-d">100</view>
+            <view class="massage-c">客单价(¥)</view>
+        </view>
+        <view class="massage-a">
+            <view class="massage-d">70</view>
+            <view class="massage-c">会员数量</view>
+        </view>
+    </view>
+    <view class="total">
+        <text>今年</text>
+        <view>18年</view>
+        <view>17年</view>
+        <view>16年</view>
+        <view>15年</view>
+        <view>14年</view>
+    </view>
+</view>

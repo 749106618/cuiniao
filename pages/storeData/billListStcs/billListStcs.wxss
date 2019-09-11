@@ -1,0 +1,71 @@
+.head {
+  margin-top: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.head view {
+  font-size: 28rpx;
+  font-family: PingFangSC;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  margin-left: 20rpx;
+}
+
+.price {
+  font-size: 56rpx;
+  font-family: DIN;
+  font-weight: bold;
+  color: rgba(255, 36, 66, 1);
+  margin-top: 26rpx;
+  text-align: center;
+}
+
+.content {
+  margin-top: 120rpx;
+  padding: 0 40rpx;
+}
+
+.content .item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60rpx;
+}
+
+.content .item:first-of-type {
+  margin-top: 0;
+}
+
+.content .item .left {
+  font-size: 28rpx;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+
+.content .item .right {
+  font-size: 28rpx;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.zk {
+  color: #FF2442;
+}
+
+.mark {
+  font-size: 28rpx;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 60rpx;
+}

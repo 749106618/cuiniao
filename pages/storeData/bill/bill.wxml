@@ -1,0 +1,128 @@
+<view class="title">
+    <view class="left">
+        本月
+        <image class="" src="../../icon/managexiala2.png" />
+    </view>
+    <view class="right">
+        <view>
+            <text class="order-form">订单 : 65</text>
+        </view>
+        <view>
+            <text class="income">收入 ¥237.44</text>
+        </view>
+    </view>
+</view>
+<view class="detail">
+    <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+</view>
+<view class="title">
+    <view class="left">
+        4月
+        
+    </view>
+    <view class="right">
+        <view>
+            <text class="order-form">订单 : 65</text>
+        </view>
+        <view>
+            <text class="income">收入 ¥237.44</text>
+        </view>
+    </view>
+</view>
+<view class="detail">
+    <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+        <view class="detail-content">
+        <view class="detail-image">
+            <image />
+        </view>
+        <view class="detail-text">
+            <view class="detail-summary">放羊的星星</view>
+            <text class="">5月29日 18:32</text>
+        </view>
+         <view class="price">
+        <text>¥300</text>
+    </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view>
+  <view class="head">
+    <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view>放羊的星星</view>
+  </view>
+  <view class="price">21.70</view>
+  <view class="content">
+    <view class="item">
+      <view class="left">消费总额</view>
+      <view class="right">￥130.00</view>
+    </view>
+    <view class="item">
+      <view class="left">消费总额</view>
+      <view class="right zk">￥130.00</view>
+    </view>
+    <view class="mark">备注：如需退款，找商家按实际付款金额清退</view>
+  </view>
+</view>

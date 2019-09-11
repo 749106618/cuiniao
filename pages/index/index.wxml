@@ -1,0 +1,78 @@
+<view class="title">Hi，翠鸟会员商家</view>
+<view class="index-box">
+    <view class="mary">
+        <view class="upper-half">
+            <view class="portrait">
+                <image class=".hader-portrait" src="../../icon/touxiang.jpg" />
+            </view>
+            <view>
+                <text class="summary">愿你的背影不再孤单......</text>
+                <text class="andy">翠鸟商家</text>
+            </view>
+        </view>
+        <view class="relevant-information">
+            <view class="relevant-daughter">
+                <navigator class="" target="" url="/pages/manage/expenseCalendar/expenseCalendar" hover-class="navigator-hover" open-type="navigate">
+                    <text class="red-daughter">120.0</text>
+                    <view>今日收入()</view>
+                </navigator>
+            </view>
+            <view class="relevant-daughter">
+                <text>74</text>
+                <view>今日订单</view>
+            </view>
+            <view class="relevant-daughter">
+                <text>25</text>
+                <view>今日客户</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="functional-region">
+    <button class="active-success">营业中</button>
+    <button class="active">下班打烊</button>
+</view>
+<view class="all-funcition">
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index1.png" />
+        </view>
+        <text class="">经营数据</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index2.png" />
+        </view>
+        <text class="">店铺管理</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index3.png" />
+        </view>
+        <text class="">会员管理</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index4.png" />
+        </view>
+        <text class="">尾货处理</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index5.png" />
+        </view>
+        <text class="">今日特惠</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index6.png" />
+        </view>
+        <text class="">红包推广</text>
+    </view>
+    <view class="partial">
+        <view class="partial-function">
+            <image src="../../icon/index7.png" />
+        </view>
+        <text class="">异业投放</text>
+    </view>
+</view>

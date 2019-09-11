@@ -1,0 +1,64 @@
+<view>
+  <view class="head">
+    <image class="" src="/icon/shuaxin.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view>刷新店铺排名</view>
+  </view>
+  <view class="card">
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <view class="txt">山水湾五金店</view>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <view class="txt">山水湾五金店</view>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <view class="time">
+          营业时间:06:00-20:00
+        </view>
+          
+        <view class="txt">山水湾五金店</view>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">店铺logo</view>
+      <view class="right">
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="img"></image>
+        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+</view>

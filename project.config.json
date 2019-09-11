@@ -19,6 +19,8 @@
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,13 +30,95 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的店铺",
+					"pathName": "pages/myStroe/stroeIndex/stroeIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改店铺logo",
+					"pathName": "pages/myStroe/updateLogo/updateLogo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改店铺name",
+					"pathName": "pages/myStroe/stroeName/stroeName",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "修改店铺二维码",
+					"pathName": "pages/myStroe/stroeQrcode/stroeQrcode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "服务小区",
+					"pathName": "pages/myStroe/serviceState/serviceState",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "店铺标签",
+					"pathName": "pages/myStroe/stroeLabel/stroeLabel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "店铺电话",
+					"pathName": "pages/myStroe/stroeTel/stroeTel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "店铺信息",
+					"pathName": "pages/myStroe/stroeInfo/stroeInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数据清单",
+					"pathName": "pages/storeData/bill/bill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "清单列表",
+					"pathName": "pages/storeData/billList/billList",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }
