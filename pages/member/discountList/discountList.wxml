@@ -1,0 +1,46 @@
+<view>
+  <view class="discount">
+    <view class="discount-top">
+      <image class="icon" src=""></image>
+      <view class="left">
+        <view class="date">今日</view>
+        <view class="fbdate">09:12 发布</view>
+      </view>
+      <view class="right">
+        <view class="btn">编辑</view>
+        <view class="btn" style="margin-left:30rpx;">刷新</view>
+      </view>
+    </view>
+    <view class="line"></view>
+    <scroll-view scroll-x>
+      <view class="discount-bottom">
+        <view class="content">
+          <image class="v1" style="background:red;"></image>
+          <view class="v2">越南火龙果</view>
+          <view class="v3">
+            <text style="color:#FF2442;font-size:28rpx;">￥32</text>
+            /斤 ￥39/斤
+          </view>
+        </view>
+        <view class="content">
+          <image class="v1" style="background:red;"></image>
+          <view class="v2">越南火龙果</view>
+          <view class="v3">
+            <text style="color:#FF2442;font-size:28rpx;">￥32</text>
+            /斤 ￥39/斤
+          </view>
+        </view>
+        <view class="content">
+          <image class="v1" style="background:red;"></image>
+          <view class="v2">越南火龙果</view>
+          <view class="v3">
+            <text style="color:#FF2442;font-size:28rpx;">￥32</text>
+            /斤 ￥39/斤
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="add-discount">新增特惠</view>
+</view>

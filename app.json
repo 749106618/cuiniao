@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/login",
+    "pages/index/index",
     "pages/storeData/bill/bill",
     "pages/storeData/billList/billList",
     "pages/storeData/billListStcs/billListStcs",
@@ -12,12 +12,17 @@
     "pages/myStroe/serviceState/serviceState",
     "pages/myStroe/stroeLabel/stroeLabel",
     "pages/myStroe/stroeTel/stroeTel",
-    "pages/myStroe/stroeInfo/stroeInfo"
-    
+    "pages/myStroe/stroeInfo/stroeInfo",
+    "pages/member/addDiscount/addDiscount",
+    "pages/member/discountList/discountList",
+    "pages/member/notDiscount/notDiscount",
+    "pages/member/discount/discount",
+    "pages/member/memberIndex/memberIndex"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FAFAFA",
     "navigationBarTitleText": "商家中心",
     "navigationBarTextStyle": "black"
   }

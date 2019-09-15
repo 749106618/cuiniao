@@ -1,59 +1,109 @@
-.title{
-    width:322rpx;
-    height:40rpx;
-    font-size:40rpx;
-    font-family:PingFangSC;
-    font-weight:500;
-    color:rgba(51,51,51,1);
-    line-height:40rpx;
+.title {
+    width: 322rpx;
+    height: 40rpx;
+    font-size: 40rpx;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 40rpx;
     margin: 42rpx 0 0 40rpx;
 }
-.only{
-    width:112rpx;
-    height:28rpx;
-    font-size:28rpx;
-    font-family:PingFangSC;
-    font-weight:500;
-    color:rgba(153,153,153,1);
-    line-height:28rpx;
-    margin:20rpx 0 0 40rpx;
-    color: #999999; 
+
+.only {
+    width: 112rpx;
+    height: 28rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: rgba(153, 153, 153, 1);
+    line-height: 28rpx;
+    margin: 20rpx 0 0 40rpx;
+    color: #999999;
 }
-input{
-    font-size:28rpx;
-    font-family:PingFangSC;
-    font-weight:400;
-    color:rgba(204,204,204,1);
-    line-height:60rpx;
+
+input {
+    font-size: 28rpx;
+    font-family: PingFangSC;
+    font-weight: 400;
+    color: rgba(204, 204, 204, 1);
+    line-height: 60rpx;
     margin: 0 40rpx;
     box-sizing: border-box;
     border-bottom: 2rpx solid #DDDDDD;
     color: #000000;
 }
-image{
+
+image {
     position: absolute;
     top: 0;
     right: 40rpx;
     width: 30rpx;
     height: 30rpx;
 }
-.password{
+
+.password {
     margin-top: 64rpx;
 }
-.input-box{
+
+.input-box {
     margin-top: 100rpx;
 }
-.input-box view{
+
+.input-box view {
     position: relative;
 }
-button{
+
+button {
     margin: 80rpx 40rpx;
-    height:88rpx;
-    background:linear-gradient(90deg,rgba(255,128,128,1) 0%,rgba(255,36,66,1) 100%);
-    border-radius:44rpx;
-    opacity:0.5;
+    height: 88rpx;
+    background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
+    border-radius: 44rpx;
+    opacity: 0.5;
     color: #FFFFFF;
 }
-.btn2{
-    background:linear-gradient(90deg,rgba(255,128,128,1) 0%,rgba(255,36,66,1) 100%);s
+
+.btn2 {
+    background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
+}
+
+.modal-dd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.d-content {
+    margin: 0 auto;
+    width: 60%;
+    min-height: 200rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    margin-top: 40%;
+    position: relative;
+}
+
+.d-content .d-title {
+    text-align: center;
+    padding: 32rpx 0;
+    font-size: 33rpx;
+    color: #333333;
+}
+
+.d-content .d-txt {
+    text-align: left;
+    border-bottom: 1rpx solid #EEEEEE;
+    font-size: 30rpx;
+    color: #666;
+    text-align: center;
+    padding-bottom: 58rpx;
+}
+
+.d-btn {
+    background: none;
+    width: 100%;
+    color: #49D1BF;
 }

@@ -1,22 +1,13 @@
-<view class="title">
-    Hi，翠鸟会员商家
-</view>
-<view class="only">
-    登录翠鸟
-</view>
-<view class="input-box">    
-    <view>        
-        <input placeholder="请输入手机号" type="number" placeholder-style="color:#eeeeee;"/>
-        <image class="" src="../../icon/chacha.png"/> 
+<view class="title">Hi，翠鸟会员商家</view>
+<view class="only">登录翠鸟</view>
+<view class="input-box">
+    <view>
+        <input placeholder="请输入手机号" type="number" data-type="account" bindinput="inputHandler" placeholder-style="color:#eeeeee;" />
+        <image src="../../icon/chacha.png" />
     </view>
-        <view>        
-         <input class="password" placeholder="亲输入登录密码" type="password" placeholder-style="color:#eeeeee;"/>
-        <image class="" src="../../icon/chacha.png"/> 
+    <view>
+        <input class="password" placeholder="亲输入登录密码" data-type="passcode" bindinput="inputHandler" type="password" placeholder-style="color:#eeeeee;" />
+        <image src="../../icon/chacha.png" />
     </view>
-
-   
 </view>
-
-<button>确认</button>
-<button class="btn2">确认</button>
-  
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认</button>

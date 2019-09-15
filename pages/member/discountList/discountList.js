@@ -1,0 +1,5 @@
+Page({
+  data: {
+    x: true
+  }
+})

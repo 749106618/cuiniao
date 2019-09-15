@@ -1,0 +1,33 @@
+<view>
+  <view class="head">
+    <view class="iocn">!</view>
+    <view>建议每次上传3-5个商品作为特惠</view>
+  </view>
+  <view class="crad">
+    <view class="v1">
+      <image class="img" src="/icon/addicon1.png"></image>
+      <view>商品照片</view>
+    </view>
+    <view class="v2">
+      <view class="left">商品名称</view>
+      <input type="text" class="right" placeholder="请输入6-16字的产品名称" placeholder-style="color:#BBBBBB"></input>
+    </view>
+    <view class="v2">
+      <view class="left">特惠价</view>
+      <input type="text" class="right" placeholder="请输入商品特惠价" placeholder-style="color:#BBBBBB"></input>
+    </view>
+    <view class="v2">
+      <view class="left">原价</view>
+      <input type="text" class="right" placeholder="请输入商品原价" placeholder-style="color:#BBBBBB"></input>
+    </view>
+    <view class="v2">
+      <view class="left">单位</view>
+      <input type="text" class="right" placeholder="请输入商品价格计量单位" placeholder-style="color:#BBBBBB"></input>
+    </view>
+  </view>
+  <view class="addpre">
+    <image class="icon" src="/icon/addicon2.png"></image>
+    <view>添加商品</view>
+  </view>
+  <view class="submit">确认并提交</view>
+</view>

@@ -1,0 +1,28 @@
+page {
+  background: rgba(250, 250, 250, 1);
+}
+
+.main {
+  width: 670rpx;
+  height: 108rpx;
+  margin: 40rpx 40rpx 60rpx 40rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  box-shadow: 0rpx 6rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC;
+  font-weight: 500;
+  color:rgba(51,51,51,1);
+}
+
+
+.sm {
+  padding: 0 45rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}

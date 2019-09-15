@@ -1,0 +1,72 @@
+<view>
+  <view class="nav">
+    <view class="nav-item {{switch==0?'btm_line':''}}" bindtap="chage" id="0">会员</view>
+    <view class="nav-item {{switch==1?'btm_line':''}}" bindtap="chage" id="1">折扣</view>
+  </view>
+  <swiper :indicator-dots="false" :autoplay="false" current="{{switch}}">
+    <swiper-item>
+      <view class="hade">
+        <view class="head-item">
+          <view class="top">12</view>
+          <view class="bottom">本周新增</view>
+        </view>
+        <view class="head-item">
+          <view class="top">12</view>
+          <view class="bottom">本月新增</view>
+        </view>
+        <view class="head-item">
+          <view class="top">12</view>
+          <view class="bottom">本月新增</view>
+        </view>
+      </view>
+      <view class="memberList">
+        <view class="member-item">
+          <image class="icon" src=""></image>
+          <view class="left">
+            <view class="user-name">放羊的星星</view>
+            <view class="address">山水湾</view>
+          </view>
+          <view class="right">
+            <view class="price">￥300.00</view>
+            <view class="sum">累计消费</view>
+          </view>
+        </view>
+        <view class="member-item">
+          <image class="icon" src=""></image>
+          <view class="left">
+            <view class="user-name">放羊的星星放羊的星星放羊的星星放羊的星星</view>
+            <view class="address">山水湾</view>
+          </view>
+          <view class="right">
+            <view class="price">￥300.00</view>
+            <view class="sum">累计消费</view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="head1">
+        <view class="left">不参与折扣商品</view>
+        <view class="right">
+          <view class="wz">香烟、啤酒</view>
+          <image class="tz" src="/icon/tiaozhuan.png"></image>
+        </view>
+      </view>
+      <view class="zk-list">
+        <view class="title">会员折扣</view>
+        <view class="item">
+          <view class="v1">会员95折</view>
+          <view class="v2">适用用户：翠鸟会员</view>
+          <view class="v3">折 扣：95%</view>
+          <image class="tz" src="/icon/tiaozhuan.png"></image>
+        </view>
+        <view class="item">
+          <view class="v1">会员95折</view>
+          <view class="v2">适用用户：翠鸟会员</view>
+          <view class="v3">折 扣：95%</view>
+          <image class="tz" src="/icon/tiaozhuan.png"></image>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

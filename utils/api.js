@@ -1,9 +1,11 @@
 /**
  * request 请求
  */
-let {config} = require('../config.js');
+let { config } = require('../config.js');
+
+
 const request = {
-    apiPost: (url, param = {}) => {
+    apiGet: (url, param = {}) => {
         return new Promise((resolve, reject) => {
             let token = wx.getStorageSync('token');
             wx.request({
@@ -67,14 +69,14 @@ const request = {
     /*获取图片高宽*/
     uploadFile: (count = 1, res) => {
         return new Promise((resolve, reject) => {
-            wx.showLoading({title: '上传中...', mask: true})
+            wx.showLoading({ title: '上传中...', mask: true })
             let token = wx.getStorageSync('token');
             for (let i = 0; i < res.tempFilePaths.length; i++) {//循环上传
                 wx.uploadFile({
                     url: config.baseUrl + 'fileupload/imgUpload?token=' + token,
                     filePath: res.tempFilePaths[i],
                     name: 'files',
-                    success (result) {
+                    success(result) {
                         let data = JSON.parse(result.data);
                         console.log(data);
                         wx.hideLoading();
@@ -99,19 +101,19 @@ const request = {
             }
         })
     },
-    apiGet: (url, param = {}) => {
+    apiPost: (url, param = {}) => {
         return new Promise((resolve, reject) => {
             wx.showLoading({
-                    title: '加载中...',
-                    mask: false
-                })
+                title: '加载中...',
+                mask: false
+            })
             let token = wx.getStorageSync('token');
             wx.request({
                 url: config.baseUrl + url + '?token=' + token,
                 data: param,
+                method: 'POST',
                 header: {
-                    "X-Requested-With": "XMLHttpRequest",
-                    "appVersion": "1.0.9"
+                    "X-Requested-With": "XMLHttpRequest"
                 },
                 success: (res) => {
                     wx.hideLoading();
@@ -119,39 +121,10 @@ const request = {
                     let status = res.data.status;
                     if (status == 200) {
                         resolve(res)
-                    } else if (status == 407 || status == 401) {
-                        wx.navigateTo({
-                            url: '/login/login/login'
-                        })
-                    } else {
-                        wx.showModal({
-                            title: '提示',
-                            content: res.data.message,
-                            showCancel: false,
-                            success: function (res) {
-                                if (res.confirm) {
-                                    if (url == 'user/getSms') {
-                                        return;
-                                    }
-                                    wx.navigateBack()
-                                } else if (res.cancel) {
-                                    console.log('用户点击取消')
-                                }
-                            }
-                        })
                     }
                 },
                 fail: (res) => {
                     wx.hideLoading();
-                    console.info(res)
-                    if (res.errMsg) {
-                        wx.showToast({
-                            title: '请检查网络链接状态',
-                            icon: 'none',
-                            duration: 2000
-                        })
-                        return;
-                    }
                     wx.showModal({
                         title: '提示',
                         content: '系统异常，请联系管理员',
@@ -166,7 +139,7 @@ const request = {
 /**
  * 设置storage
  */
-const setStorage = ({key, data}) => {
+const setStorage = ({ key, data }) => {
     return new Promise((resolve, reject) => {
         wx.setStorage({
             key,

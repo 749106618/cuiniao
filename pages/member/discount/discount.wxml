@@ -1,0 +1,19 @@
+<view>
+  <view class="main">
+    <view class="main-item">
+      <view class="left">适用会员</view>
+      <view class="right">
+        <view class="top">所有会员</view>
+        <view class="bottom">首次在店铺消费会员</view>
+      </view>
+    </view>
+    <view class="main-item">
+      <view class="left">折扣</view>
+      <view class="right1">
+        <input type="text" placeholder="请输入不高于90折扣" placeholder-style="color:#BBBBBB"></input>
+        <view style="margin-left:10rpx;">%</view>
+      </view>
+    </view>
+  </view>
+  <view class="submit">确定并提交</view>
+</view>

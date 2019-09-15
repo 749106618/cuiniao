@@ -1,6 +1,3 @@
-var emojimap = require('./emojimap.js').default
-var emoji = emojimap.emojiList.emoji
-
 function formatDate(date) {
     var year = date.getFullYear()
     var month = date.getMonth() + 1
@@ -83,7 +80,7 @@ function validStringType(str, type) {
  * 字符串数组排序：包含中文字符
  */
 function sortStringArray(srcArr) {
-    return srcArr.sort((a, b) => a.localeCompare(b, 'zh-Hans-CN', {sensitivity: 'base'}))
+    return srcArr.sort((a, b) => a.localeCompare(b, 'zh-Hans-CN', { sensitivity: 'base' }))
 }
 /**
  * 输入Unix时间戳，返回指定时间格式
@@ -125,10 +122,10 @@ function mmdd(time) {
     let date = new Date(parseInt(time)),
         month = date.getUTCMonth() + 1,
         day = date.getDate();
-        if(day>10){
-            return `${month}-${day}`
-        }
-        return `${month}-0${+day}`
+    if (day > 10) {
+        return `${month}-${day}`
+    }
+    return `${month}-0${+day}`
 }
 /**
  * 输入Unix时间戳，返回指定时间格式 消息
@@ -165,7 +162,7 @@ function calcTimeHeaderMessage(time) {
 /**
  * 播放网络音频
  */
-function playNetAudio({dur, mp3Url}) {
+function playNetAudio({ dur, mp3Url }) {
     const audioContext = wx.createInnerAudioContext()
     audioContext.src = mp3Url
     audioContext.play()
@@ -177,7 +174,7 @@ function playNetAudio({dur, mp3Url}) {
  * 输出猜拳图片对象，用于生成富文本图片节点
  */
 function generateFingerGuessImageFile(value) {
-    let file = {w: 50, h: 50, url: ''}
+    let file = { w: 50, h: 50, url: '' }
     switch (value) {
         case 1:
             file.url = 'http://yx-web.nos.netease.com/webdoc/h5/im/play-1.png'
@@ -199,7 +196,7 @@ function generateFingerGuessImageFile(value) {
  */
 function generateBigEmojiImageFile(content) {
     let prefix = 'http://yx-web.nosdn.127.net/webdoc/h5/emoji/'
-    let file = {w: 100, h: 100, url: ''}
+    let file = { w: 100, h: 100, url: '' }
     file.url = `${prefix}${content.data.catalog}/${content.data.chartlet}.png`
     return file
 }
@@ -324,19 +321,19 @@ function judgeCustomMessageType(type, content) {
         res = '贴图表情'
     } else if (type === 'custom' && content['type'] === 4) {
         res = '白板消息'
-    } else if (type === 'custom' && content['type'] === 7 ){
+    } else if (type === 'custom' && content['type'] === 7) {
         res = '药品详情'
-    }else if (type === 'custom' && content['type'] === 8 ){
+    } else if (type === 'custom' && content['type'] === 8) {
         res = '诊断金'
-    }else if (type === 'custom' && content['type'] === 9 ){
+    } else if (type === 'custom' && content['type'] === 9) {
         res = '处方'
-    }else if (type === 'custom' && content['type'] === 10 ){
+    } else if (type === 'custom' && content['type'] === 10) {
         res = '用户支付诊断金'
-    }else if (type === 'custom' && content['type'] === 11 ){
+    } else if (type === 'custom' && content['type'] === 11) {
         res = '通过好友'
-    }else if (type === 'custom' && content['type'] === 12 ){
+    } else if (type === 'custom' && content['type'] === 12) {
         res = '医生转发消息'
-    } else if (type === 'custom' && content['type'] === 13 ){
+    } else if (type === 'custom' && content['type'] === 13) {
         res = '用户支付药品'
     } else {
         res = type
@@ -402,7 +399,7 @@ function post(params) {
             header: header,
             method: 'POST',
             success: function (data, statusCode, header) {
-                resolve({data, statusCode, header})
+                resolve({ data, statusCode, header })
             },
             fail: function () {
                 reject('请求失败，请重试！')
@@ -412,15 +409,15 @@ function post(params) {
 
 }
 
-let {request} = require('./api.js');
-let {regExp} = require('../config.js');
+let { request } = require('./api.js');
+let { regExp } = require('../config.js');
 const sendMobileCode = function (self, _tel) {
     console.info(_tel)
     if (!_tel || !regExp.mobileRegExp.test(_tel)) {
         showMessage('手机号格式不正确')
         return;
     } else {
-        request.apiGet('user/getSms', {phone: _tel}).then(() => {
+        request.apiGet('user/getSms', { phone: _tel }).then(() => {
             self.setData({
                 qrObj: {
                     qrDisabled: true
@@ -458,7 +455,7 @@ const showMessage = function (content) {
             title: content,
             icon: 'none',
             mask: true,
-            success () {
+            success() {
                 if (resolve) {
                     setTimeout(function () {
                         resolve()
@@ -470,7 +467,7 @@ const showMessage = function (content) {
 }
 
 const showLoading = function (title = "登录中...") {
-    wx.showLoading({title, mask: false})
+    wx.showLoading({ title, mask: false })
 }
 
 const hideLoading = function () {
@@ -479,7 +476,7 @@ const hideLoading = function () {
 /**
  * 设置storage
  */
-const setStorage = ({key, data}) => {
+const setStorage = ({ key, data }) => {
     return new Promise((resolve, reject) => {
         wx.setStorage({
             key,
@@ -639,15 +636,15 @@ function isCN(str) { //判断是不是中文
 function timestampToTime(timestamp) {
     var date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
     var Y = date.getFullYear() + '-';
-    var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
     var D = date.getDate() + ' ';
     var h = date.getHours() + ':';
     var m = date.getMinutes() + ':';
     var s = date.getSeconds();
-    return Y+M+D+h+m+s;
+    return Y + M + D + h + m + s;
 }
-let getQueryString = function (url,name) {
-    console.log("url = "+url)
+let getQueryString = function (url, name) {
+    console.log("url = " + url)
     console.log("name = " + name)
     var reg = new RegExp('(^|&|/?)' + name + '=([^&|/?]*)(&|/?|$)', 'i')
     var r = url.substr(1).match(reg)
@@ -662,12 +659,12 @@ let getQueryString = function (url,name) {
 const getNewArr = function (picPath) {
     let picArr = picPath
     let picArrSmall = []
-    for(let i = 0;i<picArr.length;i++){
+    for (let i = 0; i < picArr.length; i++) {
         let temp = picArr[i];
-        if (temp.indexOf('medkazo.com') > 0){
+        if (temp.indexOf('medkazo.com') > 0) {
             let j = picArr[i].lastIndexOf('.')
             let strArr = picArr[i].split('')
-            strArr.splice(j,1,'_small.')
+            strArr.splice(j, 1, '_small.')
             picArrSmall[i] = strArr.join('')
         }
     }
