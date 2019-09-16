@@ -56,6 +56,7 @@ image {
 button {
     margin: 80rpx 40rpx;
     height: 88rpx;
+    line-height: 88rpx;
     background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
     border-radius: 44rpx;
     opacity: 0.5;

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
+    "pages/login/login",
     "pages/storeData/bill/bill",
     "pages/storeData/billList/billList",
     "pages/storeData/billListStcs/billListStcs",
@@ -18,12 +18,12 @@
     "pages/member/notDiscount/notDiscount",
     "pages/member/discount/discount",
     "pages/member/memberIndex/memberIndex"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FAFAFA",
     "navigationBarTitleText": "商家中心",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

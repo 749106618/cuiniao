@@ -11,94 +11,28 @@ const request = {
             wx.request({
                 url: config.baseUrl + url + '?token=' + token,
                 data: param,
-                method: 'POST',
                 header: {
                     "X-Requested-With": "XMLHttpRequest",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "appVersion": "1.0.9"
+                    "Content-Type": "application/x-www-form-urlencoded"
                 },
                 success: (res) => {
                     wx.hideLoading();
-                    let result = res.data;
-                    let status = result.status;
+                    let status = res.data.status;
                     console.log(result);
                     if (status == 200) {
                         resolve(result)
-                    } else if (status == 407 || status == 401) {
-                        wx.navigateTo({
-                            url: '/login/login/login'
-                        })
-                    } else if (status == -2) {
-                        wx.showToast({
-                            title: '数据不能为空',
-                            icon: 'none'
-                        })
-                    } else {
-                        wx.showModal({
-                            title: '提示',
-                            content: res.data.message,
-                            showCancel: false,
-                            success: function (res) {
-                                if (res.confirm) {
-                                    //wx.navigateBack()
-                                }
-                            }
-                        })
                     }
                 },
                 fail: (res) => {
                     wx.hideLoading();
                     console.info(res)
-                    if (res.errMsg) {
-                        wx.showToast({
-                            title: '请检查网络链接状态',
-                            icon: 'none',
-                            duration: 2000
-                        })
-                        return;
-                    }
                     wx.showModal({
                         title: '提示',
-                        content: '系统请求',
+                        content: '系统异常，请联系管理员',
                         showCancel: false,
                     })
                 }
             })
-        })
-    },
-    /*获取图片高宽*/
-    uploadFile: (count = 1, res) => {
-        return new Promise((resolve, reject) => {
-            wx.showLoading({ title: '上传中...', mask: true })
-            let token = wx.getStorageSync('token');
-            for (let i = 0; i < res.tempFilePaths.length; i++) {//循环上传
-                wx.uploadFile({
-                    url: config.baseUrl + 'fileupload/imgUpload?token=' + token,
-                    filePath: res.tempFilePaths[i],
-                    name: 'files',
-                    success(result) {
-                        let data = JSON.parse(result.data);
-                        console.log(data);
-                        wx.hideLoading();
-                        resolve(data);
-                    },
-                    fail: () => {
-                        wx.hideLoading();
-                        if (res.errMsg) {
-                            wx.showToast({
-                                title: '请检查网络链接状态',
-                                icon: 'none',
-                                duration: 2000
-                            })
-                            return;
-                        }
-                        wx.showModal({
-                            title: '提示',
-                            content: '系统异常，请联系管理员'
-                        })
-                    }
-                })
-            }
         })
     },
     apiPost: (url, param = {}) => {
