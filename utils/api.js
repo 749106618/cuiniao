@@ -52,10 +52,8 @@ const request = {
                 success: (res) => {
                     wx.hideLoading();
                     //console.log(res);
-                    let status = res.data.status;
-                    if (status == 200) {
-                        resolve(res)
-                    }
+                    resolve(res)
+
                 },
                 fail: (res) => {
                     wx.hideLoading();

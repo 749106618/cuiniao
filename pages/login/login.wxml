@@ -2,12 +2,11 @@
 <view class="only">登录翠鸟</view>
 <view class="input-box">
     <view>
-        <input placeholder="请输入手机号" type="number" data-type="account" bindinput="inputHandler" placeholder-style="color:#eeeeee;" />
-        <image src="../../icon/chacha.png" />
+        <input placeholder="请输入手机号"  type="number" data-type="mobile" bindinput="inputHandler" placeholder-style="color:#eeeeee;" />
     </view>
     <view>
-        <input class="password" placeholder="亲输入登录密码" data-type="passcode" bindinput="inputHandler" type="password" placeholder-style="color:#eeeeee;" />
-        <image src="../../icon/chacha.png" />
+        <input class="password"  placeholder="亲输入登录密码" data-type="pwd" bindinput="inputHandler" type="password" placeholder-style="color:#eeeeee;" />       
     </view>
 </view>
-<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认</button>
+<button style="{{isSend?'opacity: 1;':'opacity: 0.5;'}}" bindinput="send" disabled="{{isSend}}">确认</button>
+

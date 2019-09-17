@@ -39,6 +39,7 @@ image {
     right: 40rpx;
     width: 30rpx;
     height: 30rpx;
+    z-index: 999;
 }
 
 .password {
@@ -59,52 +60,6 @@ button {
     line-height: 88rpx;
     background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
     border-radius: 44rpx;
-    opacity: 0.5;
-    color: #FFFFFF;
+    color: #fff;
 }
 
-.btn2 {
-    background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
-}
-
-.modal-dd {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.d-content {
-    margin: 0 auto;
-    width: 60%;
-    min-height: 200rpx;
-    background: #fff;
-    border-radius: 10rpx;
-    margin-top: 40%;
-    position: relative;
-}
-
-.d-content .d-title {
-    text-align: center;
-    padding: 32rpx 0;
-    font-size: 33rpx;
-    color: #333333;
-}
-
-.d-content .d-txt {
-    text-align: left;
-    border-bottom: 1rpx solid #EEEEEE;
-    font-size: 30rpx;
-    color: #666;
-    text-align: center;
-    padding-bottom: 58rpx;
-}
-
-.d-btn {
-    background: none;
-    width: 100%;
-    color: #49D1BF;
-}
