@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/authorization/authorization",
     "pages/index/index",
     "pages/login/login",
     "pages/storeData/bill/bill",
