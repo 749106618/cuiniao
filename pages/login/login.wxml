@@ -8,5 +8,5 @@
         <input class="password"  placeholder="亲输入登录密码" data-type="pwd" bindinput="inputHandler" type="password" placeholder-style="color:#eeeeee;" />       
     </view>
 </view>
-<button style="{{isSend?'opacity: 1;':'opacity: 0.5;'}}" bindinput="send" disabled="{{isSend}}">确认</button>
+<button style="{{isSend?'opacity: 1;':'opacity: 0.5;'}}" bindtap="send" disabled="{{!isSend}}">确认</button>
 

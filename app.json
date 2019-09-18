@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/authorization/authorization",
     "pages/index/index",
+    "pages/authorization/authorization",
     "pages/login/login",
     "pages/storeData/bill/bill",
     "pages/storeData/billList/billList",
