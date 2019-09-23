@@ -1,0 +1,38 @@
+<!-- pages/put/add_put.wxml -->
+<view class="container">
+  <view class="theme">
+    <view class="label">
+      <text class="name">红包主题</text>
+      <input class="ipt" type="number" data-type="subject" bindinput="inputHandler" placeholder="清输入红包推广主题" placeholder-class="placeholderStyle"></input>
+    </view>
+  </view>
+  <view class="content">
+    <navigator url="choose_place" hover-class="navigator-hover">
+      <view class="label">
+        <text class="name">推广服务小区</text>
+        <view class="ipt">
+          <text class="picker">{{communitys[0].communityName}}</text>
+          <image src="../../images/more.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <picker class="ipt" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="label">
+        <text class="name">适用会员</text>
+        <view class="picker">
+          <text>{{array[index]}}</text>
+          <image src="../../images/more.png"></image>
+        </view>
+      </view>
+    </picker>
+    <view class="label">
+      <text class="name">红包金额</text>
+      <input class="ipt" type="number" data-type="totalamount" bindinput="inputHandler" placeholder="清输入红包推广主题" placeholder="清输入红包金额" placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="label">
+      <text class="name">红包数量</text>
+      <input class="ipt" type="number" data-type="totalquantity" bindinput="inputHandler" placeholder="清输入红包推广主题" placeholder="不低于50个的红包数量" placeholder-class="placeholderStyle"></input>
+    </view>
+  </view>
+  <button class="pay" bindtap="submit">发布并支付 ¥55.00</button>
+</view>

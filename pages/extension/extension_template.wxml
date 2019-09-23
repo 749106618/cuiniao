@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="background">
+    <view class="content">
+      <view class="logo">
+        <image src="../../images/logo.jpg" bindtap="chooseWxImage"></image>
+        <input style="width:402rpx;height:36rpx;" data-type="content0" bindinput="inputHandler"></input>
+      </view>
+      <view class="content-text">
+        <input class="date" data-type="content1" bindinput="inputHandler"></input>
+        <textarea class="text ft36" style="height:104rpx;color:#fff;" data-type="content2" bindinput="inputHandler"></textarea>
+        <textarea class="text ft24" style="height:114rpx;color:#fff;" data-type="content3" bindinput="inputHandler"></textarea>
+      </view>
+      <view class="qrcode">
+        <image src="../../images/logo.jpg" bindtap="chooseWxImage"></image>
+        <text>扫码了解更多</text>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <image src="../../images/pic.jpg" bindtap="chooseWxImage"></image>
+    <image src="../../images/pic.jpg" bindtap="chooseWxImage"></image>
+    <image src="../../images/pic.jpg" bindtap="chooseWxImage"></image>
+    <image src="../../images/pic.jpg" bindtap="chooseWxImage"></image>
+  </view>
+  <view class="about">
+    <text class="title">关于我们</text>
+    <textarea class="text ft24" style="height:322rpx;text-align: left;color:#fff;" data-type="content4" bindinput="inputHandler"></textarea>
+  </view>
+</view>
+<view class="fixed-bottom">
+  <view class="pic">
+    <image src="../../images/preview.png"></image>
+    <text>预览</text>
+  </view>
+  <view class="pic">
+    <image src="../../images/download.png"></image>
+    <text>保存</text>
+  </view>
+  <view class="next" bindtap="next">下一步</view>
+</view>

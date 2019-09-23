@@ -21,6 +21,8 @@ page {
 .mary {
     padding: 40rpx;
     background-color: #FFFFFF;
+    box-shadow: 0rpx 6rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
+    border-radius: 16rpx;
 
 }
 
@@ -110,38 +112,40 @@ page {
     margin: 0rpx 40rpx 60rpx;
     display: flex;
     justify-content: flex-start;
-}
-
-.functional-region .active-success {
-    width: 50%;
-    height: 80rpx;
-    background: rgba(76, 215, 98, 1);
-    box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 6rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
     border-radius: 40rpx;
-    font-size: 28rpx;
-    font-family: PingFangSC;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-    line-height: 80rpx;
-    border-right: 0;
 }
 
 .functional-region .active {
     width: 50%;
     height: 80rpx;
-    background: rgba(255, 36, 66, 1);
     border-radius: 40rpx;
     font-size: 28rpx;
     font-family: PingFangSC;
     font-weight: 600;
-    color: rgba(255, 255, 255, 1);
+    color: #333333;
     line-height: 80rpx;
+    border-right: 0;
+    background-color: #fff;
+}
+
+
+.functional-region .active.red {
+    background-color: #FF2442;
+    box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.05);
+    color: #fff;
+}
+
+.functional-region .active.green {
+    background-color: rgba(76, 215, 98, 1);
+    box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.05);
+    color: #fff;
 }
 
 .all-funcition {
     display: flex;
     flex-wrap: wrap;
-
     height: 100%;
     text-align: center;
     margin: 0 40rpx;
@@ -164,7 +168,7 @@ page {
 }
 
 .partial .sm {
-    margin-top: 20rpx;
+    margin-top: 30rpx;
 }
 
 .partial-function {
@@ -176,6 +180,7 @@ page {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0rpx 6rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
 }
 
 .partial {

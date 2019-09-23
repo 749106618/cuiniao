@@ -1,5 +1,4 @@
 let { request } = require('../../utils/api.js')
-let { sendMobileCode, getQueryString } = require('../../utils/util.js');
 var app = getApp()
 Page({
   data: {
@@ -42,11 +41,14 @@ Page({
   },
   send() {
     let param = {
-      mobile:this.data.mobile,
-      pwd:this.data.pwd
+      mobile: this.data.mobile,
+      pwd: this.data.pwd
     }
-    request.apiPost('/api/v1/user/checkpwdLogin',param).then(res=>{
-      console.log(res);  
+    request.apiPost('/api/v1/user/checkpwdLogin', param).then(res => {
+      console.log(res);
+      wx.navigateTo({
+        url: '/pages/login/login'
+      })
     })
   }
 })

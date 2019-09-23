@@ -3,20 +3,20 @@ page {
 }
 
 .card {
-    width           : 670rpx;
-    height          : 100%;
-    border-radius   : 16rpx;
-    margin          : 40rpx 40rpx 64rpx;
+    width: 670rpx;
+    height: 100%;
+    border-radius: 16rpx;
+    margin: 40rpx 40rpx 64rpx;
     background-color: #fff;
 }
 
 .monthly {
-    font-size  : 32rpx;
+    font-size: 32rpx;
     font-family: PingFangSC;
     font-weight: 500;
-    color      : rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 1);
     line-height: 32rpx;
-    padding    : 40rpx;
+    padding: 40rpx;
 }
 
 .month-income {
@@ -25,56 +25,56 @@ page {
 }
 
 .money {
-    font-size  : 60rpx;
+    font-size: 60rpx;
     font-family: DIN;
     font-weight: bold;
-    color      : rgba(255, 36, 66, 1);
+    color: rgba(255, 36, 66, 1);
     line-height: 44rpx;
-    text-align : center;
-    margin-top : 28rpx;
+    text-align: center;
+    margin-top: 28rpx;
 }
 
 .massage {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    width          : 100%;
-    text-align     : center;
+    width: 100%;
+    text-align: center;
 }
 
 .massage-a {
     margin-top: 60rpx;
-    width     : 33.33%;
+    width: 33.33%;
 }
 
 .massage-d {
-    font-size  : 36rpx;
+    font-size: 36rpx;
     font-family: DIN;
     font-weight: bold;
-    color      : rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 1);
     line-height: 32rpx;
 }
 
 .massage-c {
-    font-size  : 24rpx;
+    font-size: 24rpx;
     font-family: PingFangSC;
     font-weight: 400;
-    color      : rgba(153, 153, 153, 1);
-    margin-top : 20rpx;
+    color: rgba(153, 153, 153, 1);
+    margin-top: 20rpx;
 }
 
 .total {
-    width          : 100%;
-    height         : 80rpx;
-    line-height    : 80rpx;
-    margin-top     : 60rpx;
-    border-radius  : 0 0 16rpx 16rpx;
-    background     : rgba(248, 248, 248, 1);
-    display        : flex;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 60rpx;
+    border-radius: 0 0 16rpx 16rpx;
+    background: rgba(248, 248, 248, 1);
+    display: flex;
     justify-content: space-around;
-    font-size      : 24rpx;
-    font-family    : PingFangSC;
-    font-weight    : 400;
-    color          : rgba(51, 51, 51, 1);
+    font-size: 24rpx;
+    font-family: PingFangSC;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
 }
 
 .total text {
@@ -82,8 +82,39 @@ page {
 }
 
 .total view {
-    font-size  : 24rpx;
+    font-size: 24rpx;
     font-family: PingFangSC;
     font-weight: 400;
-    color      : rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+}
+
+.nav {
+    width: 750rpx;
+    height: 88rpx;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav .item {
+    width: 50%;
+    height: 100%;
+    line-height: 88rpx;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 6rpx 0rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
+    color: #333333;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.nav .line {
+    width: 2rpx;
+    height: 28rpx;
+    background-color: #DDDDDD;
+    position: absolute;
+    left: 373rpx;
+    top: 30rpx;
 }

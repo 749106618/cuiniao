@@ -1,0 +1,173 @@
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+      投放中
+    </view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+      已失效
+    </view>
+  </view>
+  <view class="{{currentTab == 0 ? 'show':'hidden'}}">
+    <scroll-view>
+      <navigator url="coupon_put" hover-class="none" open-type="navigate">
+        <view class="card">
+          <view class="top">
+            <image src="../../images/logo.jpg"></image>
+            <view class="shop">
+              <text class="shop-name">芙蓉兴盛便利超市(沙湖街店)</text>
+              <view class="shop-address">
+                <text>山水湾G12栋 101号</text>
+                <text>200m</text>
+              </view>
+            </view>
+          </view>
+          <view class="center">
+            <view class="center-left">
+              <view class="price">
+                <text class="red">¥</text>
+                <text class="ft48">200</text>
+                <text>满10使用</text>
+              </view>
+              <text class="ft24">有效日期至:2019.05.01</text>
+            </view>
+          </view>
+          <view class="bottom">
+            <image src="../../images/logo.jpg"></image>
+            <image src="../../images/logo.jpg"></image>
+            <image src="../../images/logo.jpg"></image>
+            <image src="../../images/logo.jpg"></image>
+            <image src="../../images/logo.jpg"></image>
+            <view class="card-point">
+              <view class="point"></view>
+              <view class="point"></view>
+              <view class="point"></view>
+            </view>
+            <text>等</text>
+            <text class="red">15</text>
+            <text>位已领取</text>
+          </view>
+        </view>
+      </navigator>
+      <view class="card">
+        <view class="top">
+          <image src="../../images/logo.jpg"></image>
+          <view class="shop">
+            <text class="shop-name">芙蓉兴盛便利超市(沙湖街店)</text>
+            <view class="shop-address">
+              <text>山水湾G12栋 101号</text>
+              <text>200m</text>
+            </view>
+          </view>
+        </view>
+        <view class="center">
+          <view class="center-left">
+            <view class="price">
+              <text class="red">¥</text>
+              <text class="ft48">200</text>
+              <text>满10使用</text>
+            </view>
+            <text class="ft24">有效日期至:2019.05.01</text>
+          </view>
+        </view>
+        <view class="bottom">
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <view class="card-point">
+            <view class="point"></view>
+            <view class="point"></view>
+            <view class="point"></view>
+          </view>
+          <text>等</text>
+          <text class="red">15</text>
+          <text>位已领取</text>
+        </view>
+      </view>
+      <view class="card">
+        <view class="top">
+          <image src="../../images/logo.jpg"></image>
+          <view class="shop">
+            <text class="shop-name">芙蓉兴盛便利超市(沙湖街店)</text>
+            <view class="shop-address">
+              <text>山水湾G12栋 101号</text>
+              <text>200m</text>
+            </view>
+          </view>
+        </view>
+        <view class="center">
+          <view class="center-left">
+            <view class="price">
+              <text class="red">¥</text>
+              <text class="ft48">200</text>
+              <text>满10使用</text>
+            </view>
+            <text class="ft24">有效日期至:2019.05.01</text>
+          </view>
+        </view>
+        <view class="bottom">
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <view class="card-point">
+            <view class="point"></view>
+            <view class="point"></view>
+            <view class="point"></view>
+          </view>
+          <text>等</text>
+          <text class="red">15</text>
+          <text>位已领取</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="{{currentTab == 1 ? 'show':'hidden'}}">
+    <scroll-view>
+      <view class="card">
+        <view class="top">
+          <image src="../../images/logo.jpg"></image>
+          <view class="shop">
+            <text class="shop-name">芙蓉兴盛便利超市(沙湖街店)</text>
+            <view class="shop-address">
+              <text>山水湾G12栋 101号</text>
+              <text>200m</text>
+            </view>
+          </view>
+        </view>
+        <view class="center">
+          <view class="center-left">
+            <view class="price">
+              <text class="red">¥</text>
+              <text class="ft48">200</text>
+              <text>满10使用</text>
+            </view>
+            <text class="ft24">有效日期至:2019.05.01</text>
+          </view>
+          <image src="../../images/invalid.png"></image>
+        </view>
+        <view class="bottom">
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <image src="../../images/logo.jpg"></image>
+          <view class="card-point">
+            <view class="point"></view>
+            <view class="point"></view>
+            <view class="point"></view>
+          </view>
+          <text>等</text>
+          <text class="red">15</text>
+          <text>位已领取</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="blank"></view>
+  <navigator url="add_put" hover-class="none" open-type="navigate">
+    <button class="add_put" catchtap="to_add_put">新增异业投放</button>
+  </navigator>
+</view>

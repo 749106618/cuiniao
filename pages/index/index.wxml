@@ -3,32 +3,36 @@
     <view class="mary">
         <view class="upper-half">
             <view class="portrait">
-                <image class=".hader-portrait" src="../../icon/touxiang.jpg" />
+                <image class=".hader-portrait" src="{{headImgUrl}}" />
             </view>
             <view>
-                <text class="summary">愿你的背影不再孤单......</text>
+                <text class="summary">{{nickName}}</text>
                 <text class="andy">翠鸟商家</text>
             </view>
         </view>
         <view class="relevant-information">
             <view class="relevant-daughter">
-                <text class="red-daughter">120.0</text>
-                <view>今日收入()</view>
+                <text class="red-daughter">{{statisticData.totalAmount}}</text>
+                <view>今日收入(￥)</view>
             </view>
             <view class="relevant-daughter">
-                <text>74</text>
+                <text>{{statisticData.orderNum}}</text>
                 <view>今日订单</view>
             </view>
             <view class="relevant-daughter">
-                <text>25</text>
+                <text>{{statisticData.guestNum}}</text>
                 <view>今日客户</view>
             </view>
         </view>
     </view>
 </view>
 <view class="functional-region">
-    <button class="active-success">营业中</button>
-    <button class="active">下班打烊</button>
+    <button class="{{isxiaban== 1 ?'active green':'active'}}" bindtap="checkStatus" data-status="1">
+        营业中
+    </button>
+    <button class="{{isxiaban== 0 ?'active red':'active'}}" bindtap="checkStatus" data-status="0">
+        下班打烊
+    </button>
 </view>
 <view class="all-funcition">
     <view class="partial">
@@ -72,7 +76,7 @@
         </navigator>
     </view>
     <view class="partial">
-        <navigator url="/pages/member/memberIndex/memberIndex">
+        <navigator url="/pages/extension/extension">
             <view class="partial-function">
                 <image src="../../icon/index6.png" />
             </view>
@@ -80,7 +84,7 @@
         </navigator>
     </view>
     <view class="partial">
-        <navigator url="/pages/member/memberIndex/memberIndex">
+        <navigator url="/pages/put/put">
             <view class="partial-function">
                 <image src="../../icon/index7.png" />
             </view>

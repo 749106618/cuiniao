@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 17,
 			"list": [
 				{
 					"id": -1,
@@ -115,6 +115,56 @@
 					"id": -1,
 					"name": "登录",
 					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/storeData/bill/bill",
+					"pathName": "pages/storeData/bill/bill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myStroe/stroeIndex/stroeIndex",
+					"pathName": "pages/myStroe/stroeIndex/stroeIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/extension/extension",
+					"pathName": "pages/extension/extension",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/extension/template_detail",
+					"pathName": "pages/extension/template_detail",
+					"query": "id=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/extension/extension_template",
+					"pathName": "pages/extension/extension_template",
+					"query": "id=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/extension/add_extension",
+					"pathName": "pages/extension/add_extension",
+					"query": "id=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/extension/choose_place",
+					"pathName": "pages/extension/choose_place",
+					"query": "",
 					"scene": null
 				}
 			]

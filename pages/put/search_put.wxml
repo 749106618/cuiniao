@@ -1,0 +1,12 @@
+<!--pages/put/search_put.wxml-->
+<view class="container">
+  <view class="search">
+    <input placeholder="商家名搜索" placeholder-class="placeholderStyle"></input>
+  </view>
+  <view class="search-text">
+    <text>山水湾五金建材</text>
+    <text>山水湾五金建材</text>
+    <text>山水湾五金建材</text>
+    <text>山水湾五金建材</text>
+  </view>
+</view>

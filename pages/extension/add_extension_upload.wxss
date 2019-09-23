@@ -1,0 +1,75 @@
+/* pages/extension/add_ extension_upload.wxss */
+
+.container {
+  background-color: #ff2442;
+  font-size: 28rpx;
+  height: 100%;
+}
+
+.content {
+  border: 2rpx dashed rgba(255, 255, 255, 1);
+  height: 1010rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.upload {
+  text-align: center;
+}
+
+.upload image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 40rpx;
+}
+
+.fixed-bottom {
+  height: 100rpx;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 6rpx 0rpx 28rpx 0rpx rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed-bottom view {
+  z-index: 999;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.pic text {
+  display: inline-block;
+  text-align: center;
+}
+
+.pic image {
+  width: 48rpx;
+  height: 32rpx;
+  margin-bottom: 12rpx;
+}
+
+.next {
+  width: 240rpx;
+  height: 72rpx;
+  background: linear-gradient(90deg, rgba(255, 128, 128, 1) 0%, rgba(255, 36, 66, 1) 100%);
+  box-shadow: 0rpx 2rpx 16rpx 0rpx rgba(255, 96, 121, 0.4);
+  border-radius: 36rpx;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 72rpx;
+  text-align: center;
+}

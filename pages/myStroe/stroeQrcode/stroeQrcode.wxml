@@ -1,5 +1,5 @@
 <view>
   <view class="main">
-    <image class="img" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="img" src="{{merchantLogo.url}}"></image>
   </view>
 </view>

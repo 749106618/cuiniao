@@ -1,0 +1,46 @@
+<!-- pages/extension/add_ extension.wxml -->
+<view class="container">
+  <view class="tips">
+    <image src="../../images/tip.png"></image>
+    <text>选择模版-编辑内容-配置红包-发布上线</text>
+  </view>
+  <view class="content">
+    <navigator url="extension_template?templateId=1" hover-class="navigator-hover">
+      <view class="classify">
+        <view class="imgs">
+          <image src="../../images/1.png"></image>
+          <view class="text">经典百搭</view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="add_extension_upload?templateId=5" hover-class="navigator-hover">
+      <view class="classify">
+        <view class="imgs">
+          <image src="../../images/2.png"></image>
+          <view class="text">自定义</view>
+        </view>
+      </view>
+    </navigator>
+    <!-- 2 -->
+    <view class="classify">
+      <view class="imgs">
+        <image src="../../images/3.png"></image>
+        <view class="text">新店开业</view>
+      </view>
+    </view>
+    <!-- 4 -->
+    <view class="classify">
+      <view class="imgs">
+        <image src="../../images/4.png"></image>
+        <view class="text">教育招生</view>
+      </view>
+    </view>
+    <!-- 3 -->
+    <view class="classify">
+      <view class="imgs">
+        <image src="../../images/5.png"></image>
+        <view class="text">特卖会</view>
+      </view>
+    </view>
+  </view>
+</view>

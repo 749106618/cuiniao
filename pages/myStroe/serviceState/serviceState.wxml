@@ -1,29 +1,15 @@
 <view>
   <view class="main">
-    <view class="item">
-      <view class="left">山水湾</view>
+    <view class="item" wx:for="{{serviceCommunitys}}" wx:key="index">
+      <view class="left">{{item.communityName}}</view>
       <view class="right">
         <text>会员数</text>
-        <text style="color:#FF2442;margin-left:5rpx;">623</text>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">山水湾</view>
-      <view class="right">
-        <text>会员数</text>
-        <text style="color:#FF2442;margin-left:5rpx;">623</text>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">山水湾</view>
-      <view class="right">
-        <text>会员数</text>
-        <text style="color:#FF2442;margin-left:5rpx;">623</text>
+        <text style="color:#FF2442;margin-left:5rpx;">0</text>
       </view>
     </view>
   </view>
   <view class="tip">
-    <text style="color:#999999;">如需修改店铺logo，请联系王大大</text>
+    <text style="color:#999999;">如需修改服务小区，请联系王大大</text>
     <text style="color:#FF2442;">18667823109</text>
   </view>
 </view>

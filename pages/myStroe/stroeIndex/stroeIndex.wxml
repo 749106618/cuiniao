@@ -4,61 +4,114 @@
     <view>刷新店铺排名</view>
   </view>
   <view class="card">
-    <view class="item">
-      <view class="left">店铺logo</view>
-      <view class="right">
-        <view class="txt">山水湾五金店</view>
-        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">店铺logo</view>
-      <view class="right">
-        <image class="img"></image>
-        <image class="img"></image>
-        <image class="img"></image>
-        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      </view>
-    </view>
-  </view>
-  <view class="card">
-    <view class="item">
-      <view class="left">店铺logo</view>
-      <view class="right">
-        <view class="txt">山水湾五金店</view>
-        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      </view>
-    </view>
-    <view class="item">
-      <view class="left">店铺logo</view>
-      <view class="right">
-        <image class="img"></image>
-        <image class="img"></image>
-        <image class="img"></image>
-        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      </view>
-    </view>
-  </view>
-  <view class="card">
-    <view class="item">
-      <view class="left">店铺logo</view>
-      <view class="right">
-        <view class="time">
-          营业时间:06:00-20:00
+    <navigator url="../updateLogo/updateLogo" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺logo</view>
+        <view class="right">
+          <image class="img" src="{{storeData.merchantLogo.url}}"></image>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
         </view>
-          
-        <view class="txt">山水湾五金店</view>
-        <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
-    </view>
+    </navigator>
+    <navigator url="../stroeName/stroeName?dataType=店铺名称" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺名称</view>
+        <view class="right">
+          <view class="txt">{{storeData.merchantName}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
     <view class="item">
-      <view class="left">店铺logo</view>
+      <view class="left">店铺照片</view>
       <view class="right">
-        <image class="img"></image>
-        <image class="img"></image>
-        <image class="img"></image>
+        <image class="img" bindtap="previewImage" data-photos="{{storeData.merchantPhotos}}" data-current="{{item.url}}" src="{{item.url}}" wx:for="{{storeData.merchantPhotos}}" wx:key="{{index}}"></image>
         <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
     </view>
+    <navigator url="../stroeQrcode/stroeQrcode" hover-class="none">
+      <view class="item">
+        <view class="left">店铺二维码</view>
+        <view class="right">
+          <image class="img" src="{{item.url}}" wx:for="{{storeData.merchantPhotos}}" wx:key="{{index}}"></image>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="card">
+    <navigator url="../stroeName/stroeName?dataType=店铺类型" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺类型</view>
+        <view class="right">
+          <view class="txt">{{merchantType}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../serviceState/serviceState" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">开通服务小区</view>
+        <view class="right">
+          <view class="txt" style="display:flex">
+            <view style="width:250rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;text-align:right;">
+              {{Communitys}}
+            </view>
+            {{CommunitysLength>1 ? '等'+CommunitysLength+'个':''}}
+          </view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../stroeLabel/stroeLabel" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺标签</view>
+        <view class="right">
+          <view class="time">营业时间:06:00-20:00</view>
+          <view class="txt">{{'等'+merchantLabelsLength+'个'}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../stroeName/stroeName?dataType=经营商品" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">经营商品</view>
+        <view class="right">
+          <view class="txt" style="width:364rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;text-align:right;">
+            {{storeData.operateGoods}}
+          </view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="card">
+    <navigator url="../stroeName/stroeName?dataType=店铺地址" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺地址</view>
+        <view class="right">
+          <view class="txt">{{storeData.address}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="pages/myStroe/stroeTel/stroeTel" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">联系电话</view>
+        <view class="right">
+          <view class="txt">{{storeData.merchantUsers[0].mobileNo}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../stroeInfo/stroeInfo" hover-class="none" open-type="navigate">
+      <view class="item">
+        <view class="left">店铺信息</view>
+        <view class="right">
+          <view class="txt">{{storeData.shopInfo?storeData.shopInfo:'暂无'}}</view>
+          <image class="jt" src="/icon/tiaozhuan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </navigator>
   </view>
 </view>

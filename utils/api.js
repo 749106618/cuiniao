@@ -17,10 +17,15 @@ const request = {
                 },
                 success: (res) => {
                     wx.hideLoading();
-                    let status = res.data.status;
-                    console.log(result);
-                    if (status == 200) {
-                        resolve(result)
+                    let status = res.data.code;
+                    if (status == 500) {
+                        wx.showModal({
+                            title: '提示',
+                            content: res.data.msg,
+                            showCancel: false,
+                        })
+                    } else {
+                        resolve(res)
                     }
                 },
                 fail: (res) => {

@@ -1,0 +1,34 @@
+<!--pages/put/add_put.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="label">
+      <text class="name">受投商家</text>
+      <picker class="ipt" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <text class="picker">{{array[index]}}</text>
+        <image src="../../images/more.png"></image>
+      </picker>
+    </view>
+    <view class="label">
+      <text class="name">优惠金额</text>
+      <input class="ipt" type="number" placeholder="请设置优惠金额" placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="label">
+      <text class="name">门槛金额</text>
+      <input class="ipt" type="number" placeholder="请设置消费金额门槛" placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="label">
+      <text class="name">投放份数</text>
+      <input class="ipt" type="number" placeholder="请设置投放份数" placeholder-class="placeholderStyle"></input>
+    </view>
+    <view class="label">
+      <text class="name">有效截止期</text>
+      <picker class="ipt" mode="date" value="{{date}}" bindchange="bindDateChange">
+        <text class="picker">{{date}}</text>
+        <image src="../../images/more.png"></image>
+      </picker>
+    </view>
+  </view>
+  
+  <button class="pay">确认并支付¥5.00</button>
+  <view class="tip">投放按份计费，每份¥0.50</view>
+</view>

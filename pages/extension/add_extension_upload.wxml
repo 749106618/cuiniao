@@ -1,0 +1,21 @@
+<!--pages/extension/add_ extension_upload.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="upload">
+      <image src="../../images/add.png"></image>
+      <view>添加自定义</view>
+    </view>
+  </view>
+
+</view>
+<view class="fixed-bottom">
+  <view class="pic">
+    <image src="../../images/preview.png"></image>
+    <text>预览</text>
+  </view>
+  <view class="pic">
+    <image src="../../images/download.png"></image>
+    <text>保存</text>
+  </view>
+  <view class="next">下一步</view>
+</view>

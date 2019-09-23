@@ -1,0 +1,72 @@
+<view class="container">
+  <view class="background">
+    <view>
+      <view class="logo">
+        <image src="../../images/logo.jpg"></image>
+        <text>切果NOW!(芙蓉芙蓉路…</text>
+      </view>
+      <view class="content-text">
+        <view class="date">
+          <text>5月29日-6月29日 10万红包等你来拿</text>
+        </view>
+        <view class="text ft36">
+          <text>开业大福利，扫码抢红包拉扫 码抢红包拉扫码抢红包</text>
+        </view>
+        <view class="text ft24">
+          <text>开业大福利，扫码抢红包拉扫码抢红包拉扫 开业大福利，扫码抢红包拉扫码抢红包拉扫 开业大福利，扫码抢红包拉扫码抢红包拉扫</text>
+        </view>
+      </view>
+      <view class="qrcode">
+        <image src="../../images/logo.jpg"></image>
+        <text>扫码了解更多</text>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <image src="../../images/pic.jpg"></image>
+    <image src="../../images/pic.jpg"></image>
+    <image src="../../images/pic.jpg"></image>
+    <image src="../../images/pic.jpg"></image>
+  </view>
+  <view class="about">
+    <text class="title">关于我们</text>
+    <text>
+      店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介
+    </text>
+  </view>
+  <view class="price-card">
+    <view class="left">
+      <text class="red ft48">¥{{activityDetail.totalAmount}}</text>
+      <text>{{activityDetail.totalQuantity}}份</text>
+      <text>{{activityDetail.activityCommunitys}}</text>
+    </view>
+    <view class="right red">活动中</view>
+  </view>
+  <view class="pd40">
+    <view class="card">
+      <view class="content">
+        <view>
+          <text>已有</text>
+          <text class="red">{{activityDetail.receiveNum}}</text>
+          <text>个用户领取</text>
+        </view>
+        <view class="number">剩{{activityDetail.remainQuantity}}份</view>
+      </view>
+      <navigator url="detail_extension" hover-class="navigator-hover" wx:for="{{memberGetList}}" wx:key="{{index}}">
+        <view class="row">
+          <view class="left">
+            <image src="{{item.headImgUrl}}"></image>
+            <view class="user">
+              <text class="name">{{item.nickName }}</text>
+              <text class="time">{{item.receiveTime }}</text>
+            </view>
+          </view>
+          <text class="status">¥{{item.receiveAmount }}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="fixed-bottom">
+  <view class="share">分享给微信好友</view>
+</view>

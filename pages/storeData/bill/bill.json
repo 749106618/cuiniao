@@ -1,12 +1,1 @@
-{
-    "pages": [
-        "pages/manage/manage"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "收入说明",
-        "navigationBarTextStyle": "black"
-    },
-    "sitemapLocation": "sitemap32.json"
-}
+{}

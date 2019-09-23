@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="top">
+    <text class="place">选择推广服务小区</text>
+    <view class="address">
+      <image src="../../images/address.png"></image>
+      <text>万家丽北路高架</text>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class='convencibox-item' wx:for='{{convArr}}' wx:for-index='zindex' data-idx='{{zindex}}' bindtap='chooseIt'>
+    <view class='convencibox-item-bot'>
+      <view class="flex">
+        <view wx:if='{{!item.isclick}}' class='convencibox-item-bot-icon'>
+          <image src='../../images/uncheck.png'></image>
+        </view>
+        <view wx:if='{{item.isclick}}' class='convencibox-item-bot-icon1'>
+          <image src='../../images/check.png'></image>
+        </view>
+        <view class='convencibox-item-bot-info'>
+          <view>
+            <text>{{item.communityName}}</text>
+            <text class="tips">常驻</text>
+          </view>
+          <text class="item-address">{{item.address}}</text>
+        </view>
+      </view>
+      <text class="distance">200m内</text>
+    </view>
+  </view>
+  <view class='convenci-bot'>
+    <view class="bottom">
+      <view class='convenci-bot-right' bindtap='selecAll'>
+        <image src="{{check}}"></image>
+        <text>{{isSelecAll?'反选':'全选'}}</text>
+      </view>
+      <view class="submit" bindtap="submit">确认</view>
+    </view>
+  </view>
+</view>

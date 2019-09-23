@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="card">
+    <view class="center">
+      <view class="center-left">
+        <view class="price">
+          <text class="red">¥</text>
+          <text class="ft48">200</text>
+          <text>满10使用</text>
+        </view>
+        <text class="ft24">1000份</text>
+      </view>
+      <text class="red text">活动中</text>
+    </view>
+    <view class="bottom">
+      <image src="../../images/logo.jpg"></image>
+      <text>切果NOW!(芙蓉路店)</text>
+    </view>
+  </view>
+  <view class="card">
+    <view class="content">
+      <view>
+        <text>已有</text>
+        <text class="red">322</text>
+        <text>个用户领取</text>
+      </view>
+      <view class="number">剩20份</view>
+    </view>
+    <navigator url="detail_put" hover-class="none" open-type="navigate">
+      <view class="row">
+        <view class="left">
+          <image src="../../images/logo.jpg"></image>
+          <view class="user">
+            <text class="name">放羊的星星</text>
+            <text class="time">10:23:24</text>
+          </view>
+        </view>
+        <text class="status">已使用</text>
+      </view>
+    </navigator>
+    <view class="row">
+      <view class="left">
+        <image src="../../images/logo.jpg"></image>
+        <view class="user">
+          <text class="name">放羊的星星</text>
+          <text class="time">10:23:24</text>
+        </view>
+      </view>
+      <text class="status colorLight">未使用</text>
+    </view>
+    <view class="row">
+      <view class="left">
+        <image src="../../images/logo.jpg"></image>
+        <view class="user">
+          <text class="name">放羊的星星</text>
+          <text class="time">10:23:24</text>
+        </view>
+      </view>
+      <text class="status">已过期</text>
+    </view>
+    <view class="row">
+      <view class="left">
+        <image src="../../images/logo.jpg"></image>
+        <view class="user">
+          <text class="name">放羊的星星</text>
+          <text class="time">10:23:24</text>
+        </view>
+      </view>
+      <text class="status">已使用</text>
+    </view>
+  </view>
+</view>

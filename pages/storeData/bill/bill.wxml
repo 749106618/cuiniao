@@ -1,8 +1,5 @@
 <view class="title">
-    <view class="left">
-        本月
-        <image class="" src="../../icon/managexiala2.png" />
-    </view>
+    <view class="left">本月</view>
     <view class="right">
         <view>
             <text class="order-form">订单 : 65</text>
@@ -123,5 +120,12 @@
         <view class="price">
             <text>¥300</text>
         </view>
+    </view>
+</view>
+<view class="nav">
+    <view class="item" style="color:#FF2442;">统计</view>
+    <view class="line"></view>
+    <view class="item">
+        <navigator url="/pages/storeData/billList/billList" hover-class="none">明细</navigator>
     </view>
 </view>

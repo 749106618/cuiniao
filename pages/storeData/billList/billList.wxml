@@ -62,3 +62,10 @@
         <view>14年</view>
     </view>
 </view>
+<view class="nav">
+    <view class="item">
+        <navigator url="/pages/storeData/bill/bill" hover-class="none">统计</navigator>
+    </view>
+    <view class="line"></view>
+    <view class="item" style="color:#FF2442;">明细</view>
+</view>

@@ -28,10 +28,7 @@ Page({
                   wxCode.headImgUrl = userInfoResult.userInfo.avatarUrl;
                   request.apiPost('/api/v1/user/wxlogin', wxCode).then(result => {
                     console.log("得到用户信息", result)
-                    wx.setStorage({
-                      key: "token",
-                      data: result.data.data
-                    })
+                    wx.setStorageSync("token", result.data.data)
                     self.checkUser()
                   })
                 }
@@ -45,13 +42,15 @@ Page({
   checkUser() {
     request.apiPost('/api/v1/user/checkUser').then(res1 => {
       console.log(res1);
-      if (res1 == '商家') {
-        wx.reLaunch({
-          url: '/pages/index/index'
-        })
-      } else {
+      wx.setStorageSync("headImgUrl", res1.data.data.headImgUrl)
+      wx.setStorageSync("nickName", res1.data.data.nickName)
+      if (res1 == 'unuser') {
         wx.navigateTo({
           url: '/pages/login/login'
+        })
+      } else {
+        wx.reLaunch({
+          url: '/pages/index/index'
         })
       }
     })

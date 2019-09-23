@@ -1,14 +1,11 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+view {
   box-sizing: border-box;
 }
 
-view {
-  box-sizing: border-box;
+.container {
+  padding: 40rpx;
+}
+
+page {
+  background-color: #FAFAFA;
 }

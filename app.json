@@ -18,7 +18,20 @@
     "pages/member/discountList/discountList",
     "pages/member/notDiscount/notDiscount",
     "pages/member/discount/discount",
-    "pages/member/memberIndex/memberIndex"
+    "pages/member/memberIndex/memberIndex",
+    "pages/put/put",
+    "pages/put/add_put",
+    "pages/put/search_put",
+    "pages/put/detail_put",
+    "pages/put/coupon_put",
+    "pages/extension/extension",
+    "pages/extension/add_extension",
+    "pages/extension/add_extension_upload",
+    "pages/extension/add_message",
+    "pages/extension/detail_extension",
+    "pages/extension/choose_place",
+    "pages/extension/extension_template",
+    "pages/extension/template_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

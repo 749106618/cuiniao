@@ -7,15 +7,15 @@
     <swiper-item>
       <view class="hade">
         <view class="head-item">
-          <view class="top">12</view>
+          <view class="top">{{weekNum}}</view>
           <view class="bottom">本周新增</view>
         </view>
         <view class="head-item">
-          <view class="top">12</view>
+          <view class="top">{{weekNum}}</view>
           <view class="bottom">本月新增</view>
         </view>
         <view class="head-item">
-          <view class="top">12</view>
+          <view class="top">{{totalNum}}</view>
           <view class="bottom">本月新增</view>
         </view>
       </view>
@@ -45,21 +45,25 @@
       </view>
     </swiper-item>
     <swiper-item>
-      <view class="head1">
-        <view class="left">不参与折扣商品</view>
-        <view class="right">
-          <view class="wz">香烟、啤酒</view>
-          <image class="tz" src="/icon/tiaozhuan.png"></image>
+      <navigator url="../notDiscount/notDiscount?cdy={{noDiscountGoods}}" hover-class="none" open-type="navigate">
+        <view class="head1">
+          <view class="left">不参与折扣商品</view>
+          <view class="right">
+            <view class="wz">{{noDiscountGoods}}</view>
+            <image class="tz" src="/icon/tiaozhuan.png"></image>
+          </view>
         </view>
-      </view>
+      </navigator>
       <view class="zk-list">
         <view class="title">会员折扣</view>
-        <view class="item">
-          <view class="v1">会员95折</view>
-          <view class="v2">适用用户：翠鸟会员</view>
-          <view class="v3">折 扣：95%</view>
-          <image class="tz" src="/icon/tiaozhuan.png"></image>
-        </view>
+        <navigator url="../notDiscount/notDiscount?cdy={{noDiscountGoods}}" hover-class="none" open-type="navigate">
+          <view class="item">
+            <view class="v1">会员95折</view>
+            <view class="v2">适用用户：翠鸟会员</view>
+            <view class="v3">折 扣：95%</view>
+            <image class="tz" src="/icon/tiaozhuan.png"></image>
+          </view>
+        </navigator>
         <view class="item">
           <view class="v1">会员95折</view>
           <view class="v2">适用用户：翠鸟会员</view>

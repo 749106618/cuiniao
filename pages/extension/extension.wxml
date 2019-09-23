@@ -1,0 +1,30 @@
+<view class="container">
+  <navigator url="template_detail?id={{item.id}}" hover-class="navigator-hover" wx:for="{{activityList}}" wx:key="{{index}}">
+    <view class="card">
+      <view class="top">
+        <image src="{{item.receiveMembers[0].headImgUrl}}"></image>
+        <view class="shop">
+          <text class="shop-name">今日</text>
+          <view class="shop-address">
+            <text>{{item.publishTime}} 发布</text>
+          </view>
+        </view>
+        <text class="status">{{item.statusName}}</text>
+      </view>
+      <view class="center">
+        <view class="center-left">
+          <view class="price">
+            <text class="red">¥</text>
+            <text class="ft48">{{item.totalAmount }}</text>
+            <text class="border">{{item.totalQuantity}}份</text>
+          </view>
+          <text class="ft28">{{item.subject}}</text>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <view class="blank"></view>
+  <view class="add_put">
+    <navigator url="add_extension" hover-class="navigator-hover">新增红包</navigator>
+  </view>
+</view>
